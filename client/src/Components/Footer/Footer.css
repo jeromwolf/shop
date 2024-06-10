@@ -31,7 +31,7 @@
 .footer-links li{
     cursor: pointer;
 }
-.footer-social-icon{
+.footer-social-icons{
     display: flex;
     gap: 10px;
 }

@@ -17,10 +17,11 @@
     font-weight: 600;
 }
 .cartitems-format{
+    
     font-size: 16px;
     font-weight: 500;
 }
-.carticon-product-icon{
+.cartitems-product-icon{
     height: 55px;
 }
 .cartitems-remove-icon{

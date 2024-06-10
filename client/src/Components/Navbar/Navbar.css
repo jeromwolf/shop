@@ -1,4 +1,4 @@
-.navbar{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +86,7 @@
 
 /* -------- media query---------- */
 @media(max-width:900px){
-    .navbar{
+    .nav{
         padding: 15px 40px;
     }
     .nav-menu{
@@ -95,7 +95,7 @@
 }
 
 @media(max-width:750px){
-    .navbar{
+    .nav{
         padding: 15px 20px;
     }
     .nav-login-cart{
@@ -129,7 +129,7 @@
 }
 
 @media(max-width:500px){
-    .navbar{
+    .nav{
         padding: 15px 15px;
     }
 

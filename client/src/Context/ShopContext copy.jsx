@@ -4,14 +4,24 @@ export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
 
-  const [cartItems, setCartItems] = useState([]);
+  const [products, setProducts] = useState([]);
+
+  const getDefaultCart = () => {
+    let cart = {};
+    for (let i = 0; i < 300; i++) {
+      cart[i] = 0;
+    }
+    return cart;
+  };
+
+  const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/carts')
+    fetch('http://localhost:4000/api/products')
       .then((res) => res.json())
       .then((data) => {
         console.log(data)
-        setCartItems(data)
+        setProducts(data)
       })
 
     if (localStorage.getItem("auth-token")) {
